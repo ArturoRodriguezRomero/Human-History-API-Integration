@@ -1,6 +1,10 @@
 # Human-History-API-Integration
 A simple API integrated web about Human History.
 
+
+
+![Screen Capture](Human-History-API-Integration/img/screencap.PNG)
+
 I used http://www.vizgr.org/historical-events 's API to show human history in a simple and somewhat interesting way.
 The API fetches all its information from Wikipedia.
 
