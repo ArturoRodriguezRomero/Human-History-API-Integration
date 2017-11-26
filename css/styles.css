@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body{
+    background-color: cornflowerblue;
+}
+
+.page-container{
+    display: flex;
+    flex-direction: column;
+    color: rgb(65, 65, 65);
+}
+
+.title-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 4em;
+    padding: 50px;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.title-text{
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+#last-years-input{
+    width: 3em;
+}
+
+#last-years-input[type=text]{
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 1em;
+    text-align: center;
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+
+.controls-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.control-item{
+    display: flex;
+    flex-direction: row;
+    font-size: 2em;
+    margin: 15px;
+}
+
+.control-item-title{
+    margin-right: 10px;
+    color: white;
+}
+
+.control-item-button{
+    font-size: 1em;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+.control-item input{
+    border: none;
+}
+
+.control-item input[type=text]{
+    font-size: 1em;
+    width: 200px;
+}
+
+.control-item-button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.control-item-button:active{
+    transform: scale(1);
+}
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.year-container{
+    display: flex;
+    flex-direction: row;
+    background-color:lightblue;
+}
+
+.year-container:nth-child(even){
+    background-color: lightskyblue;
+}
+
+.year{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    font-weight: bold;
+    width: 50px;
+    font-size: 3em;
+    box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.year-body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.month-container{
+    display: flex;
+    flex-direction: row;
+    background-color: lightpink;
+    border-bottom: 3px solid lightcoral;
+}
+
+.month-container:nth-child(even){
+    background-color: lightcoral;
+}
+
+.month{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    font-weight: bold;
+    width: 50px;
+    font-size: 2em;
+    box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.rotated-date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    width: 50px;
+    min-height: 150px;
+    transform: rotate(-90deg);
+}
+
+.event-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(255, 241, 225);
+    justify-content: center;
+}
+
+.event{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: bisque;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.event:nth-child(even){
+    background-color: rgb(255, 241, 225);
+}
+
+.event a{
+    display: inline;
+}
+
+.event-day{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    min-height: 2em;
+    min-width: 2em;
+    background-color: lightcoral;
+    border-radius: 3px;
+    color: rgb(255, 241, 225);
+    margin-right: 5px;
+}
+
+.event-description{
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+    padding-right: 15px;
+}
+
+.event-description::first-letter{
+    text-transform: capitalize;
+}
+
+.event-description a:link {
+    color: lightcoral;
+}
+
+.event-description a:visited {
+    text-decoration: none;
+}
+
+.event-description a:hover {
+    text-decoration: underline;
+}
+
+.event-description a:active {
+    text-decoration: underline;
+}
+
+.loading-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-container-invisible{
+    display: none;
+}
+
+.loading-text{
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+}
